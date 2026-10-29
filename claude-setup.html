@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Claude Setup | CodePath Sourcing Onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar">
+<a class="brand" href="index.html">CodePath<span>*</span>Sourcing</a>
+<nav class="main" aria-label="Portal"><a href="index.html">Start Here</a><a href="tools.html">Tools and Access</a><a href="workflow.html">Sourcing Workflow</a><a href="outreach.html">Outreach</a><a href="claude-setup.html" aria-current="page">Claude Setup</a><a href="contacts.html">Contacts</a></nav>
+</div></header>
+<main id="main">
+<p class="eyebrow">Claude</p>
+
+<h1>Claude Setup</h1>
+<p class="lede">Get Claude Cowork running, connect your tools, and install the Sourcing Intelligence plugin.</p>
+
+<h2>Order of setup</h2>
+<ol>
+  <li>Set up Claude Cowork with the <a href="https://docs.google.com/document/d/1iY95swz3PVHkRbyrtXBDbuEl2uq7Ie4GvumtFg5DYiA/edit?tab=t.0">Claude Cowork Starter Pack 2026</a>.</li>
+  <li>Connect the required connectors below.</li>
+  <li>Install the Sourcing Intelligence plugin (plugin version 1.2.0, updated June 2026).</li>
+  <li>Work from the CodePath workspace folder in Cowork. That is where <code>.claude-memory/</code> and your voice profile live.</li>
+  <li>Run <code>/source-start</code> to see the user guide and commands.</li>
+</ol>
+
+<h2>Required connectors</h2>
+<p>The plugin does not work without these. Connect each in Claude settings, then Connectors.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Connector</th><th>Why it is needed</th></tr></thead>
+<tbody>
+<tr><td>Google Drive</td><td>Reads JDs from the Role Launches folder and saves all sourcing output to the Sourcing Strategy folder. Sign in with your CodePath Google account.</td></tr>
+<tr><td>Notion</td><td>Queries active roles, sourcing plans, and channel history. Authorize with the CodePath workspace.</td></tr>
+<tr><td>Slack</td><td>Sends batch sourcing summaries when a run completes. The default channel is #[yourname]_Claude_sourcing, created automatically on first use.</td></tr>
+</tbody></table></div>
+
+<h2>Strongly recommended</h2>
+<ul>
+  <li><strong>Claude in Chrome:</strong> needed for batch sourcing via LinkedIn Recruiter, saving candidates to Gem, and pulling Greenhouse channel performance reports. Install the extension and keep a browser window open during sessions.</li>
+  <li><strong>HeadHunter:</strong> the preferred batch sourcing engine, faster and more precise than LinkedIn Recruiter. Ask Mitchell Bryson to add you. Without it, the plugin falls back to LinkedIn Recruiter through Chrome.</li>
+  <li><strong>Gmail:</strong> creates outreach email drafts. Without it, outreach copy is delivered as text to paste.</li>
+</ul>
+
+<h2>Configuration</h2>
+<ul>
+  <li><strong>Voice profile:</strong> for personalized outreach, a profile built from your past outreach is stored in the plugin. If you do not have one, share 3 to 5 past outreach samples with Erica.</li>
+  <li><strong>Sourcing Rubrics doc:</strong> the shared rubrics checklist lives in the Role Launches folder in Google Drive. If your role is not in it, add it or ask Erica.</li>
+</ul>
+
+<h2>What loads at the start of each session</h2>
+<ul>
+  <li>Who you are, so files are labeled to you</li>
+  <li>Active role JDs from the shared Role Launches folder</li>
+  <li>The latest calibration notes for each active role</li>
+  <li>Your sourcing strategy folder, including rubrics, shortlists, and batch history</li>
+  <li>Anyone in the talent dossier flagged as ready to contact who fits a current role</li>
+  <li>Whether HeadHunter is available</li>
+</ul>
+
+<h2>If something is not working</h2>
+<ol>
+  <li>Is the relevant connector active in Claude settings?</li>
+  <li>Are you working from the CodePath workspace folder?</li>
+  <li>Does the role have a folder in the Role Launches folder in Google Drive?</li>
+</ol>
+
+<h2>Tips</h2>
+<ul>
+  <li>The rubric for the active role auto-loads, and the plugin tells you which one it is using.</li>
+  <li>Before any task that takes more than a minute, the plugin tells you what to expect.</li>
+  <li>After any <code>/source-batch</code> run you are offered a daily repeat at a time you choose.</li>
+  <li>The plugin writes without em dashes.</li>
+</ul>
+
+<div class="pager"><a href="outreach.html">&larr; Outreach</a><a href="contacts.html">Contacts &rarr;</a></div>
+</main>
+<footer class="site">CodePath sourcing onboarding portal for Dominique Terry. Last updated October 29, 2026. Internal use: do not add compensation, candidate names, or other confidential details to these pages.</footer>
+</body>
+</html>

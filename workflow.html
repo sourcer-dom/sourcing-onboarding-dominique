@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sourcing Workflow | CodePath Sourcing Onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar">
+<a class="brand" href="index.html">CodePath<span>*</span>Sourcing</a>
+<nav class="main" aria-label="Portal"><a href="index.html">Start Here</a><a href="tools.html">Tools and Access</a><a href="workflow.html" aria-current="page">Sourcing Workflow</a><a href="outreach.html">Outreach</a><a href="claude-setup.html">Claude Setup</a><a href="contacts.html">Contacts</a></nav>
+</div></header>
+<main id="main">
+<p class="eyebrow">Workflow</p>
+
+<h1>Sourcing Workflow</h1>
+<p class="lede">The path from a new role to sent outreach, and which Sourcing Intelligence command helps at each step.</p>
+
+<h2>The steps</h2>
+<ol>
+  <li><strong>Prep for kickoff.</strong> Confirm the role has a folder in the Role Launches folder in Google Drive and that its job description is there. Check whether your role is in the shared Sourcing Rubrics doc. If not, add it or ask Erica.</li>
+  <li><strong>Build the strategy.</strong> Run <code>/sourcing-strategy</code> for a rubric, a 4-tier company shortlist, five priority candidate signals, compensation research, and a Hiring Feasibility Review (Green, Yellow, or Red).</li>
+  <li><strong>Calibrate after meetings.</strong> Run <code>/update-rubric</code> after every kickoff and hiring sync. Paste in notes or a Granola transcript and it updates the living rubric with a dated change log entry.</li>
+  <li><strong>Check the dossier.</strong> When a req opens, run <code>/dossier</code> to look for people already flagged as a fit before starting a fresh search.</li>
+  <li><strong>Source.</strong> Run <code>/source-batch</code> with a cap you set (for example 15, 20, or 30). It evaluates each candidate against the rubric and sends a Slack summary when done.</li>
+  <li><strong>Make assets.</strong> Run <code>/create-asset</code> for role info pages, one-pagers, "Why CodePath" pieces, Loom scripts, and candidate FAQs.</li>
+  <li><strong>Draft and send outreach.</strong> Follow the <a href="outreach.html">outreach standards</a>. A human reviews every message before it goes out.</li>
+  <li><strong>Track results.</strong> Use Greenhouse tracking links to see which sources work, and watch the Sourcing Pulse dashboard for daily stats.</li>
+</ol>
+
+<h2>Commands</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Command</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td><code>/source-start</code></td><td>Shows the plugin user guide and command list</td></tr>
+<tr><td><code>/sourcing-strategy</code></td><td>Builds a role rubric, 4-tier company shortlist, candidate signals, comp research, and Hiring Feasibility Review</td></tr>
+<tr><td><code>/source-batch</code></td><td>Runs a daily sourcing batch against the rubric via HeadHunter or LinkedIn Recruiter and saves qualified prospects</td></tr>
+<tr><td><code>/update-rubric</code></td><td>Updates the living rubric from kickoff or hiring sync notes</td></tr>
+<tr><td><code>/create-asset</code></td><td>Builds role info pages, one-pagers, Why CodePath pieces, Loom scripts, and candidate FAQs</td></tr>
+<tr><td><code>/dossier</code></td><td>Tracks named people worth contacting for future roles</td></tr>
+</tbody></table></div>
+<div class="note"><strong>Heads up.</strong> <code>/source-batch</code> currently saves prospects to Gem, which ends in January 2027. It needs to be rebuilt for Juicebox before then.</div>
+
+<h2>Director and above: pre-check first</h2>
+<p>For any candidate at Director level or above, the plugin does a public research pass before drafting outreach. It looks for conference talks, blog posts, course authorship, GitHub activity, podcast appearances, and press mentions, then picks a hook to lead with. You see a short summary and can redirect the angle before the full draft.</p>
+<pre>Pre-check: [Name]
+Hook found: [What was found and where]
+Outreach angle: [How it will be used]
+Proceeding to draft.</pre>
+
+<h2>Open-ended asks also work</h2>
+<ul>
+  <li><strong>Evaluate a candidate:</strong> "Can you evaluate [Name] for the Director of Growth role?"</li>
+  <li><strong>Draft outreach:</strong> "Write an InMail for [Name]" or "Draft a 3-step sequence for the PM role."</li>
+  <li><strong>Deep research pass:</strong> "Do a deep research pass for the Sr. Director of Curriculum."</li>
+  <li><strong>Comp research:</strong> "What's the market rate for a Director of Growth in edtech?"</li>
+  <li><strong>Proactive list building:</strong> "Start building a list for a future Head of Product role."</li>
+</ul>
+
+<h2>Where files are saved</h2>
+<p>Everything goes to the Sourcing Strategy folder in Google Drive, in a subfolder named [YourName]_[Role Title], for example Erica_Director of Growth.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>File</th><th>What it contains</th></tr></thead>
+<tbody>
+<tr><td>sourcing-rubric.md + .docx</td><td>Living rubric, updated after every hiring sync</td></tr>
+<tr><td>company-shortlist.md + .docx</td><td>4-tier target company list with rationale</td></tr>
+<tr><td>candidate-signals.md + .docx</td><td>Priority signals for identifying ideal candidates</td></tr>
+<tr><td>sourcing-strategy.md + .docx</td><td>Strategy summary including HFR, channels, selling points</td></tr>
+<tr><td>batch-log.md</td><td>Running log of every sourcing batch run</td></tr>
+<tr><td>outreach-copy/</td><td>Outreach drafts for the role</td></tr>
+<tr><td>assets/</td><td>One-pagers, info pages, Loom scripts</td></tr>
+<tr><td>deep-research-candidates.md + .docx</td><td>Named candidates surfaced through deep research</td></tr>
+</tbody></table></div>
+<p>The shared <code>_pipeline/talent-dossier.md</code> sits at the top level of the Sourcing Strategy folder, not inside a role subfolder.</p>
+
+<h2>Data governance</h2>
+<ul>
+  <li><strong>Juicebox project naming:</strong> name of the role = name of the project. Each role gets its own project.</li>
+  <li><strong>New sources in Greenhouse:</strong> to add an entirely new source, contact Dom Terry first to avoid duplicates. Tracking links show where candidates come from: <a href="https://support.greenhouse.io/hc/en-us/articles/201823760-Create-a-tracking-link-for-a-job-board">Tracking Link Setup in Greenhouse</a>.</li>
+</ul>
+
+<div class="pager"><a href="tools.html">&larr; Tools and Access</a><a href="outreach.html">Outreach &rarr;</a></div>
+</main>
+<footer class="site">CodePath sourcing onboarding portal for Dominique Terry. Last updated October 29, 2026. Internal use: do not add compensation, candidate names, or other confidential details to these pages.</footer>
+</body>
+</html>
